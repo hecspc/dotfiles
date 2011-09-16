@@ -17,17 +17,21 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gpd='git push origin:develop develop'
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
+alias rc='rails console'
+alias rs='rails server'
+alias rg='rails generate'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
+alias scaffold='rails g scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
+
+# mongo
+alias mng='mongod run --config /usr/local/Cellar/mongodb/1.6.5-x86_64/mongod.conf'
 
 # commands starting with % for pasting from web
 alias %=' '

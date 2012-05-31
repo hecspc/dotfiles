@@ -1,0 +1,5 @@
+#/bin/bash
+clear
+rm ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt
+touch ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt
+tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt 

@@ -1,0 +1,2 @@
+#compdef libs
+_files -W /Work/Libraries -/

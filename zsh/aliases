@@ -29,9 +29,12 @@ alias tlog='tail -f log/development.log'
 alias scaffold='rails g scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
+alias grd='bundle exec guard -c'
+alias be='bundle exec'
 
 # mongo
-alias mng='mongod run --config /usr/local/Cellar/mongodb/1.6.5-x86_64/mongod.conf'
+alias mng="mongod run --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf"
+alias killmng="ps -ef | grep mongod | grep -v grep | awk '{print $2}' | xargs kill -9"
 
 # commands starting with % for pasting from web
 alias %=' '
